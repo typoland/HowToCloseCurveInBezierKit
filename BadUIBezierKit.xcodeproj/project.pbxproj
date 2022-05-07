@@ -18,6 +18,7 @@
 		B2B15F102826ED3100092795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B15EE62826ED3100092795 /* Assets.xcassets */; };
 		B2B15F112826ED3100092795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B15EE62826ED3100092795 /* Assets.xcassets */; };
 		B2B15F222826ED9E00092795 /* BezierKit in Frameworks */ = {isa = PBXBuildFile; productRef = B2B15F212826ED9E00092795 /* BezierKit */; };
+		B2B15F27282709C700092795 /* BezierKit in Frameworks */ = {isa = PBXBuildFile; productRef = B2B15F26282709C700092795 /* BezierKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B15F27282709C700092795 /* BezierKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +165,9 @@
 			dependencies = (
 			);
 			name = "BadUIBezierKit (iOS)";
+			packageProductDependencies = (
+				B2B15F26282709C700092795 /* BezierKit */,
+			);
 			productName = "BadUIBezierKit (iOS)";
 			productReference = B2B15EEB2826ED3100092795 /* BadUIBezierKit.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +265,7 @@
 			mainGroup = B2B15EDE2826ED2F00092795;
 			packageReferences = (
 				B2B15F202826ED9E00092795 /* XCRemoteSwiftPackageReference "BezierKit" */,
+				B2B15F25282709C700092795 /* XCRemoteSwiftPackageReference "BezierKit" */,
 			);
 			productRefGroup = B2B15EEC2826ED3100092795 /* Products */;
 			projectDirPath = "";
@@ -723,10 +729,23 @@
 				kind = branch;
 			};
 		};
+		B2B15F25282709C700092795 /* XCRemoteSwiftPackageReference "BezierKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hfutrell/BezierKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		B2B15F212826ED9E00092795 /* BezierKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2B15F202826ED9E00092795 /* XCRemoteSwiftPackageReference "BezierKit" */;
+			productName = BezierKit;
+		};
+		B2B15F26282709C700092795 /* BezierKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B2B15F202826ED9E00092795 /* XCRemoteSwiftPackageReference "BezierKit" */;
 			productName = BezierKit;
