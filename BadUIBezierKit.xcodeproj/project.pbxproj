@@ -17,6 +17,7 @@
 		B2B15F0F2826ED3100092795 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B15EE52826ED2F00092795 /* ContentView.swift */; };
 		B2B15F102826ED3100092795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B15EE62826ED3100092795 /* Assets.xcassets */; };
 		B2B15F112826ED3100092795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2B15EE62826ED3100092795 /* Assets.xcassets */; };
+		B2B15F222826ED9E00092795 /* BezierKit in Frameworks */ = {isa = PBXBuildFile; productRef = B2B15F212826ED9E00092795 /* BezierKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		B2B15F042826ED3100092795 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B15F082826ED3100092795 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B2B15F0A2826ED3100092795 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		B2B15F232826FA1B00092795 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B2B15F242826FB0000092795 /* OOutlines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OOutlines.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B15F222826ED9E00092795 /* BezierKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +90,8 @@
 		B2B15EDE2826ED2F00092795 = {
 			isa = PBXGroup;
 			children = (
+				B2B15F232826FA1B00092795 /* README.md */,
+				B2B15F242826FB0000092795 /* OOutlines.png */,
 				B2B15EE32826ED2F00092795 /* Shared */,
 				B2B15EF22826ED3100092795 /* macOS */,
 				B2B15EFB2826ED3100092795 /* Tests iOS */,
@@ -174,6 +180,9 @@
 			dependencies = (
 			);
 			name = "BadUIBezierKit (macOS)";
+			packageProductDependencies = (
+				B2B15F212826ED9E00092795 /* BezierKit */,
+			);
 			productName = "BadUIBezierKit (macOS)";
 			productReference = B2B15EF12826ED3100092795 /* BadUIBezierKit.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +258,9 @@
 				Base,
 			);
 			mainGroup = B2B15EDE2826ED2F00092795;
+			packageReferences = (
+				B2B15F202826ED9E00092795 /* XCRemoteSwiftPackageReference "BezierKit" */,
+			);
 			productRefGroup = B2B15EEC2826ED3100092795 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -701,6 +713,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2B15F202826ED9E00092795 /* XCRemoteSwiftPackageReference "BezierKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hfutrell/BezierKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2B15F212826ED9E00092795 /* BezierKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2B15F202826ED9E00092795 /* XCRemoteSwiftPackageReference "BezierKit" */;
+			productName = BezierKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2B15EDF2826ED2F00092795 /* Project object */;
 }
